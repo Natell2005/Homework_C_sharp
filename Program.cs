@@ -12,7 +12,7 @@ else
     Console.Write("максимальное число " + b);
 }
 
-*/
+
 //Задача 4
 Console.WriteLine("Введите первое число: ");
 int a = Convert.ToInt32(Console.ReadLine());
@@ -32,4 +32,18 @@ if (b > a && b > c)
 if (c > b && c > a)
 {
     Console.Write("максимальнное число " + c);
+} 
+*/
+//задача 6
+Console.WriteLine("Введите число: ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number >= 0 && number % 2 == 0)
+
+{
+    Console.Write("число " + number + " является четным ");
+}
+else
+{
+    Console.WriteLine("число " + number + " не является четным ");
 }
