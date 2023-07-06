@@ -33,8 +33,9 @@ if (c > b && c > a)
 {
     Console.Write("максимальнное число " + c);
 } 
-*/
+
 //задача 6
+
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
@@ -46,4 +47,25 @@ if (number >= 0 && number % 2 == 0)
 else
 {
     Console.WriteLine("число " + number + " не является четным ");
+}
+*/
+//Задача 8
+Console.WriteLine("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+int i = 0;
+
+while (i <= N)
+{
+    if (N % 2 == 0)
+    {
+        Console.Write($"{N - 2}, {N - 4}, {N - 6} ");
+        i++;
+
+    }
+    else
+    {
+        Console.Write($"{N - 1}, {N - 3}, {N - 5} ");
+        i++;
+
+    }
 }
