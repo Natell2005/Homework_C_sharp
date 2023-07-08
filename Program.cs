@@ -52,20 +52,16 @@ else
 //Задача 8
 Console.WriteLine("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine());
-int i = 0;
+int i = 2;
 
-while (i <= N)
+if (N > 1)
 {
-    if (N % 2 == 0)
+    while (i <= N)
     {
-        Console.Write($"{N - 2}, {N - 4}, {N - 6} ");
-        i++;
+        Console.Write(i + ", ");
+
+        i = i + 2;
 
     }
-    else
-    {
-        Console.Write($"{N - 1}, {N - 3}, {N - 5} ");
-        i++;
 
-    }
 }
